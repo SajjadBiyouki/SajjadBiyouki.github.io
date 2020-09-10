@@ -228,10 +228,10 @@ hr{
     border:0
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-    font-family:"Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family:'lato';
     font-weight:500;
     line-height:1.1;
-    color:#34495e
+
 }
 h1 small,h1 .small,h2 small,h2 .small,h3 small,h3 .small,h4 small,h4 .small,h5 small,h5 .small,h6 small,h6 .small,.h1 small,.h1 .small,.h2 small,.h2 .small,.h3 small,.h3 .small,.h4 small,.h4 .small,.h5 small,.h5 .small,.h6 small,.h6 .small{
     font-weight:normal;
@@ -256,10 +256,13 @@ h1,.h1{
     font-size:36px
 }
 h2,.h2{
-    font-size:30px
+    font-size:30px;
+    color:#236D93;
 }
 h3,.h3{
     font-size:24px;
+
+
 
 }
 h4,.h4{
