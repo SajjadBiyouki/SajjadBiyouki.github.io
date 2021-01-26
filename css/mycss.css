@@ -1,0 +1,22 @@
+.navbar-default .navbar-brand {
+    font-size: 1em;
+}
+
+code {
+    font-size: 80%;
+    white-space: pre-wrap;
+    overflow: auto;
+    color: blue;   
+}
+
+.language-nohighlight {
+    color: blue;
+}
+
+body {
+    font-size: 85%;
+}
+
+ul.ul-interests.ul-edu li{
+    font-size: 85%;
+}
