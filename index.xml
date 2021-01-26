@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mauricio Tec on Mauricio Tec</title>
+    <link>https://mauriciogtec.github.io/</link>
+    <description>Recent content in Mauricio Tec on Mauricio Tec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spatiotemporal GFL images</title>
+      <link>https://mauriciogtec.github.io/post/spatiotemporalgfl/</link>
+      <pubDate>Fri, 21 Dec 2018 22:36:34 -0600</pubDate>
+      
+      <guid>https://mauriciogtec.github.io/post/spatiotemporalgfl/</guid>
+      <description>&lt;p&gt;Below are some images, produced with &lt;code&gt;ggplot2&lt;/code&gt;, for our work on spatiotemporal smoothing with the graph-fused lasso.&lt;/p&gt;
+
+&lt;p&gt;&lt;diV&gt;
+&lt;figure&gt;
+&lt;img src=&#34;https://mauriciogtec.github.io/img/spatiotemporalgfl/combined.gif&#34; alt=&#34;smoothing&#34; width=600&gt;
+&lt;figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+The figures on the &lt;strong&gt;left (red)&lt;/strong&gt; show the productivity (dollars per hour) at the airport, and the figures at the right in &lt;strong&gt;downtown (blue)&lt;/strong&gt;. The two &lt;strong&gt;top&lt;/strong&gt; figures show the models &lt;strong&gt;without postprocessing&lt;/strong&gt;, and the &lt;strong&gt;bottom&lt;/strong&gt; two use &lt;strong&gt;Bernstein polynomials smoothing&lt;/strong&gt; and 400 degrees of freedom.&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To do&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The image may improve using facet instead of four separate gifs
+&lt;/figcaption&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;diV&gt;
+&lt;figure&gt;
+&lt;img src=&#34;https://mauriciogtec.github.io/img/spatiotemporalgfl/map_median_enet_compressed.gif&#34; alt=&#34;map&#34; width=500&gt;
+&lt;figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+The map shows the median productivity of a driver depending on the current location of a driver. It is computed with the methodology described by the paper with Natalia. It is worth noticing that downtown is always better during morning, mainly on Sunday and Saturday. And the airport has the worst productivity, mostly on afternoons.
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To do&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Should we smooth the transition? (interpolate frames)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/figcaption&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;sdfds&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning Reading List</title>
+      <link>https://mauriciogtec.github.io/post/rl-reading-list/</link>
+      <pubDate>Sat, 24 Nov 2018 11:11:35 -0600</pubDate>
+      
+      <guid>https://mauriciogtec.github.io/post/rl-reading-list/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Current Draft: 2018-11-26&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a list to Reinforcement Learning ideas and papers. It is mostly for personal research, as part of my work as PhD student at the University of Texas at Austin.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Course: Research Elective Fall 2019&lt;/li&gt;
+&lt;li&gt;Advisor: Prof. Stephen G. Walker&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: This is not an extensive literature review, but a broad overview to guide our research, with the specific goal of exploring and extracting the statistical and probabilistic ideas and areas of opportunity in reinforcement learning literature.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;key-concepts&#34;&gt;Key concepts&lt;/h2&gt;
+
+&lt;h3 id=&#34;multi-armed-bandits&#34;&gt;Multi-armed Bandits&lt;/h3&gt;
+
+&lt;p&gt;It is the most elementary problem of Reinforcement Learning, and the building block of many algorithms for more complex problems.&lt;/p&gt;
+
+&lt;p&gt;We start with random variables $X_1, &amp;hellip;, X_K$ representing the rewards of $K$ possible actions, and we have to decide a sampling strategy so that we maximize the &lt;em&gt;total reward&lt;/em&gt; over time. Basically, we are interested in $\max(X_1, &amp;hellip;, X_K)$. We start with no data&amp;ndash;no smart decision available&amp;ndash;and at each turn, we must select one of the $X_i$ from which to sample (or one bandit arm, as in casino machines).&lt;/p&gt;
+
+&lt;p&gt;The reward up to time $T$ is $R_T = \sum_{t=1}^T X_t$. Naively, we could sample each arm several times and then select the arm whose sample has the highest mean; however, the idea is to learn quickly and reach high values as soon as possible.&lt;/p&gt;
+
+&lt;p&gt;The simplest version of the problem assumes that the $X_i$ are independent, and it is already an interesting problem.&lt;/p&gt;
+
+&lt;p&gt;The first idea developed in this direction was &lt;a href=&#34;https://www.jstor.org/stable/2332286&#34; target=&#34;_blank&#34;&gt;Thompson Sampling&lt;/a&gt; (1933), which boils down to Bayesian inference. We begin by putting a prior belief over the distribution of each $X_i$ (usually uniform), and at each step we update our posterior belief of the selected arm with the observed value obtained after selecting it. The selection rule is to choose arm $i$ proportionally to our belief of how much its reward is higher than those of the other arms. The usual approach is to simulate a sample from each posterior distribution, and choose the arm whose simulation had the highest sampled value. The simplest version of the algorithm uses a Beta-Bernoulli conjugate model. Gaussian Processes are also used for more complicated tasks.&lt;/p&gt;
+
+&lt;p&gt;Although the idea of Thompson sampling is very old, it remains an active area of research. For example, &lt;a href=&#34;https://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling&#34; target=&#34;_blank&#34;&gt;Chappelle &amp;amp; Li&lt;/a&gt; (2011) compare multiple strategies and improvements over Thompson Sampling, it also discusses its optimality.&lt;/p&gt;
+
+&lt;p&gt;Another considerable part of the literature centers around the idea of minimizing the expected &lt;em&gt;regret&lt;/em&gt; of a strategy $\pi$ up to time $T$, defined as&lt;/p&gt;
+
+&lt;p&gt;$$ T\mu_*  - \sum_{t=1}^T \mu_{\pi(t)} $$&lt;/p&gt;
+
+&lt;p&gt;where $\mu_* = \max_i E(X_i)$, and $\mu_{\pi(t)}$ is the mean of the random variable chosen at time $t$ by the sampling strategy $\pi$. The idea of regret was introduced by &lt;a href=&#34;http://www.sciencedirect.com/science/article/pii/0196885885900028&#34; target=&#34;_blank&#34;&gt;Lai and Robbins&lt;/a&gt; (1985). A recent highly-cited survey is &lt;a href=&#34;https://arxiv.org/abs/1204.5721&#34; target=&#34;_blank&#34;&gt;(Bubeck &amp;amp; Bianchi, 2012)&lt;/a&gt;. Not surprisingly, the analysis techniques rely on probability concentration inequalities. For example, an application of Hoeffding&amp;rsquo;s inequality leads to the so-called &lt;em&gt;upper confidence bound&lt;/em&gt; (UCB) rule, namely,
+$$
+\pi(t) = \mathrm{argmax}_i \; \hat{\mu}_i + \sqrt{\frac{2\log t}{n_i}}
+$$&lt;/p&gt;
+
+&lt;p&gt;where $\hat{\mu}_i$ is the empirical mean of the samples from arm $i$, and $n_i$ is the number of times arm $i$ has been sampled. The second term appearing in this rule takes into account uncertainty and encourages exploration of less frequently selected actions. The contrast is evident: while the Bayesian approach (Thompson sampling) deals with uncertainty via the probability laws of posterior Bayesian inference, the UCB approach uses concentration inequalities. This contraposition is also a common theme in Theoretical Statistics. A common variation to the second term is to multiply it by a by a constant, in an attempt to increase or decrease the effects of uncertainty.&lt;/p&gt;
+
+&lt;p&gt;Both Thompson Sampling and UCB provide a solution to the dilemma of &lt;em&gt;exploitation&lt;/em&gt; &lt;em&gt;vs&lt;/em&gt; &lt;em&gt;exploration&lt;/em&gt;. A simplest approach is to only choose the arm with the highest $\hat{\mu}$, except with a probability $\epsilon$, in which case we choose completely at random. Most of the time, this $\epsilon$-greedy strategy is usually an underperformer. Also $\epsilon$ should ogo to zero eventually, but it is hard to know at which speed it is convenient.&lt;/p&gt;
+
+&lt;p&gt;A recent must-read reference is &lt;a href=&#34;https://openreview.net/pdf?id=SyYe6k-CW&#34; target=&#34;_blank&#34;&gt;Riquelme et al&lt;/a&gt; (2018), which discusses Deep Bayesian Bandits. Here, the $X_i$ are not independent and $K$ is very large. In fact, the input space can be treated as a continuous space. Essentially, what deep neural networks do is find common patterns in the input space and effectively reduce $K$. Multi-armed bandit problems are building blocks for more complicated tasks, where often it is necessary to learn from images or other complex data.&lt;/p&gt;
+
+&lt;p&gt;Several variants of the multi-armed bandit problem exist. One direction is to add additional structure; for a recent survey and state-of-the-art approach we have &lt;a href=&#34;http://papers.nips.cc/paper/6773-minimal-exploration-in-structured-stochastic-bandits&#34; target=&#34;_blank&#34;&gt;Combes et al&lt;/a&gt; (2017). Another direction is to allow the distribution of the $X_i$ to change over time: the so-called non-stationary bandits. This is a hard problem, and current approaches can be improved, both theoretically and pragmatically (&lt;em&gt;c.f.&lt;/em&gt; &lt;a href=&#34;http://papers.nips.cc/paper/5378-stochastic-multi-armed-bandit-problem-with-non-stationary-rewards.pdf&#34; target=&#34;_blank&#34;&gt;Besbes et al&lt;/a&gt; (2014) and &lt;a href=&#34;https://arxiv.org/abs/1805.09365&#34; target=&#34;_blank&#34;&gt;Wu et al&lt;/a&gt; (2018)).&lt;/p&gt;
+
+&lt;p&gt;A natural question is to ask if the principles of multi-armed bandit can be applied to model selection and hyper-parameter tuning in statistics. This technique is known as &lt;em&gt;Bayesian Optimization&lt;/em&gt; and is also an active area of research. For a recent survey, we can consult &lt;a href=&#34;https://ieeexplore.ieee.org/document/7352306&#34; target=&#34;_blank&#34;&gt;Shahriari et al&lt;/a&gt; (2016).&lt;/p&gt;
+
+&lt;h3 id=&#34;reinforcement-learning&#34;&gt;Reinforcement Learning&lt;/h3&gt;
+
+&lt;p&gt;The name reinforcement learning simply refers to the general learning or inference problem where the goal is to maximize a reward signal, but no data is available a priori. Instead, data is generated by trial and error. The difference with multi-armed bandit approach, is that the latter applies to problems where the set of possible choices remains constant. In many situations, actions change the state of the world, and the set or the effect of available of actions.&lt;/p&gt;
+
+&lt;p&gt;If we were in Heraclitus world where &amp;ldquo;no man ever steps in the same river twice&amp;rdquo;, then it would be impossible to learn. To do inference we need repetition, or at least some structure. For this reasons, reinforcement learning has been centered around Markov Decision Processes. For a complete review, a highly-expected recent textbook is &lt;a href=&#34;http://incompleteideas.net/book/the-book.html&#34; target=&#34;_blank&#34;&gt;Sutton &amp;amp; Barto&lt;/a&gt; (2018). Reinforcement Learning van be regarding as building upon the literature of &lt;em&gt;dynamic programming&lt;/em&gt; and &lt;em&gt;control theory&lt;/em&gt;. Some people suggest the name of &lt;em&gt;approximate dynamic programming&lt;/em&gt;, but reinforcement learning is ubiquitous in the Computer Science community.&lt;/p&gt;
+
+&lt;p&gt;A Markov Decisions Process (MDP) is composed of the following ingredients:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A state space $S$&lt;/li&gt;
+&lt;li&gt;A set of action sets for each state ${A_s \mid s\in S}$&lt;/li&gt;
+&lt;li&gt;A family of random variables representing rewards for choosing an action $a$ given state $s$ ${R_{s,a} \mid s\in S, a\in A_s}$&lt;/li&gt;
+&lt;li&gt;A Markov transition function governing the rules of the universe $p(s&amp;rsquo;\mid a, s)$.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The possible reward, as well as the transition rules of the universe depend only on the current state $s$ and the decision $a$. For an MDP, the current state $s$ is assumed to be observed. When there is only one state, we are in the multi-armed bandit case.&lt;/p&gt;
+
+&lt;p&gt;The goal of reinforcement learning is to find an optimal &lt;em&gt;policy&lt;/em&gt; $\pi$, which is a family of rules that assign a probability $\pi(a\mid s)$ to selecting an action $a \in A_s$, given a current state $S$. Denoting the observed state and selected action at time $t$ as $s(t)$ and $\pi(t)$ respectively, the goal is to maximize $\sum_{t=1}^T R_{s(t),  \pi(t)}$, the total reward up-to-time $t$.&lt;/p&gt;
+
+&lt;p&gt;There is a variant of an MDP where the state can be unobserved; we call these partially observed MDPs or POMDPs, and they pose several additional challenges.&lt;/p&gt;
+
+&lt;p&gt;There are several possible approaches to reinforcement learning. One variant is to use continuous input and action spaces. These approach, more common in the &lt;em&gt;control theory&lt;/em&gt; literature, often needs the use of differential equations. Some algorithms exploit domain-specific properties of a problem. For example, if trying to learn to play a board game, it can take symmetries into account. When an algorithms seeks learn the transition map $p(s&amp;rsquo;\mid s, a)$, we call it &lt;em&gt;model-based&lt;/em&gt;; otherwise, &lt;em&gt;model-free&lt;/em&gt;. The tendency in Computer Science is to appraise model-free general-purpose algorithms: best exemplified by the efforts of Google&amp;rsquo;s company DeepMind and their algorithm &lt;a href=&#34;http://arxiv.org/abs/1712.01815&#34; target=&#34;_blank&#34;&gt;Alpha Zero&lt;/a&gt; (2017), the current champion programme of Go, Chess and Backgammon. Engineering literature seems to be more focused on solving POMDPs and model-based methods. Nonetheless, both communities care about both approaches.&lt;/p&gt;
+
+&lt;p&gt;Under knowledge of the distribution of the rewards and finite tasks, it is possible to find an optimal policy exactly using the techniques of &lt;em&gt;dynamic programming&lt;/em&gt;, which use a one-step application of the Markov property. More specifically, given:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;some optimal policy $\pi_*$&lt;/li&gt;
+&lt;li&gt;remaining total reward $G_t := \sum_{u=t}^\infty R_{s(u), \pi_*(u)}$&lt;/li&gt;
+&lt;li&gt;the action-value function $Q(s, a):= E[G_t \mid s, a, \pi_*]$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;the Markov-property yields
+$$
+Q(s, a) =  E[R_{s(t + 1), \pi_*(t + 1)}] + \max_{a&amp;rsquo;\in A_s} Q(s(t+1), a&amp;rsquo;)
+$$
+This equation is known as the &lt;a href=&#34;http://books.google.com/books?id=fyVtp3EMxasC&amp;amp;pg=PR5&amp;amp;dq=dynamic+programming+richard+e+bellman&amp;amp;client=firefox-a#v=onepage&amp;amp;q=dynamic%20programming%20richard%20e%20bellman&amp;amp;f=false&#34; target=&#34;_blank&#34;&gt;Bellman equation&lt;/a&gt;. The Markov assumption is implicit here in that $Q$ does not depend on $t$. From knowledge of $Q$ only, we can recover the optimal policy with $\pi_*(a\mid s) = \mathrm{argmax}_{a&amp;rsquo;}Q(s, a&amp;rsquo;)$ (or at least an equivalent policy in expectation). If $s$ is a terminal state, then the second summand of the right-hand side of the equation is not included. Thus, under the aforementioned assumptions: we can solve the value of $Q$ for every state and actions leading to a terminal state in one step, and then continue using backward induction. &lt;a href=&#34;http://incompleteideas.net/book/the-book.html&#34; target=&#34;_blank&#34;&gt;Sutton &amp;amp; Barto&lt;/a&gt; explain this in detail in their textbook.&lt;/p&gt;
+
+&lt;p&gt;Often, a discount factor is added to the definition of $G_t$, so that $G_t := \sum_{u=t}^\infty \gamma^{u-t}R_{s(u), \pi_*(u)}$. With $0&amp;lt;\gamma &amp;lt; 1$, this guarantees convergence for non finite tasks, and the Bellman equation can be adapted accordingly. However, this as a technical addition, rather than an essential part of the idea.&lt;/p&gt;
+
+&lt;h3 id=&#34;q-learning&#34;&gt;Q-Learning&lt;/h3&gt;
+
+&lt;p&gt;The Bellman equation leads to several schemes for approximate solutions. One of the most celebrated approaches, with numerous variants and extensions, is $Q$-learning &lt;a href=&#34;http://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf&#34; target=&#34;_blank&#34;&gt;(Watkins, 1989)&lt;/a&gt;. We start by creating a table for each possible pair $(s, a)$. Then, at each step of the algorithm, given:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a current approximation $q$ to $Q$&lt;/li&gt;
+&lt;li&gt;a starting state $s$&lt;/li&gt;
+&lt;li&gt;a selected action $a$&lt;/li&gt;
+&lt;li&gt;a reward $r$ received from choosing $a$&lt;/li&gt;
+&lt;li&gt;a new state $s&amp;rsquo;$ observed after choosing $a$, generated from the environment transition function,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;we can perform the update
+$$ q(s, a) \leftarrow (1 - \alpha) q(s, a) + \alpha(r + \max_{a&amp;rsquo;} q(s&amp;rsquo;, a&amp;rsquo;)) \quad \text{for a learning rate } \quad 0&amp;lt;\alpha&amp;lt;1. $$
+Finally, for the next iteration the current state will be $s \leftarrow s&amp;rsquo;$, the selected action will be $a \leftarrow \mathrm{argmax}_{a&amp;rsquo; \in A_{s&amp;rsquo;}} q(s&amp;rsquo;, a&amp;rsquo;)$ and $r$ will be drawn from the distribution of $R_{sa}$. We repeat the algorithm until convergence of $q$ or until the rewards reach a desired average level.&lt;/p&gt;
+
+&lt;p&gt;Several remarks of statistical and probabilistic nature are available:
+- We are only using a one-step application of the Markov property. Equivalently, the observed reward sample $r$ is only used for one update. Reusing data from the rewards to update more previously visited states is at the heart of temporal difference learning methods, which were behind the first computer programmes to play Backgammon at human-expert level &lt;a href=&#34;https://cling.csd.uwo.ca/cs346a/extra/tdgammon.pdf&#34; target=&#34;_blank&#34;&gt;(Tesauro, 1995)&lt;/a&gt;.
+- The existing Q-learning theory was entirely based on expectations. Surprisingly recently, the term &lt;em&gt;distributional reinforcement learning&lt;/em&gt; is used an effort to incorporate knowledge of the entire distribution &lt;a href=&#34;https://arxiv.org/abs/1707.06887&#34; target=&#34;_blank&#34;&gt;(Bellemare, 2017)&lt;/a&gt;. This open an entire area of opportunity for statisticians. Initial experiments, suggest a benefit from this approach.
+- The distributional approach takes us back to the ideas of Thompson sampling, where it was shown that taking into account exploration and exploitation via posterior sampling is a good idea. These ideas have not been explored in depth.
+- The original approach to distributional reinforcement learning used a discrete approximation to an entire distribution, no structure whatsoever. A subsequent approach from the authors is more reasonable and attempts a quantile approximation approach &lt;a href=&#34;https://arxiv.org/abs/1710.10044&#34; target=&#34;_blank&#34;&gt;(Dabney et al., 2017)&lt;/a&gt;. With this improvement, they outperform existing $Q$-learning approaches.&lt;/p&gt;
+
+&lt;p&gt;Here is another computational remark: for more complicated tasks it is impossible to store the table $Q$ for each possible pair $(s,a)$. Not even using supercomputer! No existing machine is close to be able to store all the possible state-action pairs of chess, not even close. Moreover, even if it was possible, it wouldn&amp;rsquo;t necessarily the smartest thing to do. Since we care about learning fast, we can add a functional form to $Q$. For example, the family of linear approximation methods uses feature maps $\phi(s, a) = (\phi_1(s, a), &amp;hellip;, \phi_k(s, a))$ and
+$$ Q(s, a) \approx \sum_k \beta_k^\top\phi_k(s, a). $$
+The choice of feature maps is non-trivial, and it depends on the domain of application, it can be made of polynomials, sines, cosines, radial basis functions, convolutions, etc.&lt;/p&gt;
+
+&lt;p&gt;More generally, we can replace it with any function approximation scheme $f$ and take a loss-function approach. Here is an strategy: regard a transition $(s, a) \to (r, s&amp;rsquo;, a&amp;rsquo;)$ as pseudo data, and define a loss-function kernel
+$$
+l(\beta \mid s, a, r, s&amp;rsquo;, a&amp;rsquo;) = (r + f(\beta \mid s&amp;rsquo;, a&amp;rsquo;) - f(\beta \mid s, a))^2.
+$$
+Then we can optimize with respect to $\beta$, so that $f$ will approximate $Q$ by the Bellman equation. This is exactly what is done in Deep Q-Learning &lt;a href=&#34;http://arxiv.org/abs/1312.5602&#34; target=&#34;_blank&#34;&gt;(Mnih et al., 2013)&lt;/a&gt;. Since deep learning is simply a highly flexible functional model for $f$. This has been useful when learning from image or text data, tasks in which neural networks provide the best known results.&lt;/p&gt;
+
+&lt;p&gt;The above loss kernel is only define for &lt;em&gt;one&lt;/em&gt; transition. So an usual approach is to use an online optimization algorithm, which can update $f$ with one data point: the usual choice is stochastic gradient descent. It also has been demonstrated that reusing older transitions&amp;ndash;known as experience replay &lt;a href=&#34;https://arxiv.org/abs/1509.02971&#34; target=&#34;_blank&#34;&gt;(Lillicrap et al., 2015)&lt;/a&gt;&amp;ndash;improves the behaviour. Another alternative is to do batch updates or to have parallel actors learning simultaneously &lt;a href=&#34;http://proceedings.mlr.press/v48/mniha16.pdf&#34; target=&#34;_blank&#34;&gt;(Mnih et al., 2016)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another popular and different approach in reinforcement learning problems are Monte Carlo tree-search algorithms. We explain these in the following section.&lt;/p&gt;
+
+&lt;h3 id=&#34;montecarlo-tree-search-mcts&#34;&gt;MonteCarlo Tree Search (MCTS).&lt;/h3&gt;
+
+&lt;p&gt;MCTS is used for tasks composed of repeated playouts, usually when a reward is received only when the playout is completed. This is a common situation in board games, in which the reward signal is imply win or loss at the end of the game.&lt;/p&gt;
+
+&lt;p&gt;MCTS was a key tool in developing computer programs capable of defeating master players of Backgammon, Chess and Go. In its heart, it is simply using the theory developed for multi-armed bandits with changing states. A highly-cited review is &lt;a href=&#34;http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.297.3086&#34; target=&#34;_blank&#34;&gt;(Browne et al., 2012)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The idea is way simple:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We&amp;rsquo;ll solve an independent bandit problem for each state using Thompson sampling, UCB1 or other multiarmed-bandit algorithm.&lt;/li&gt;
+&lt;li&gt;A game is played until the end, when a reward is observed, it is propagated back through all the trace that lead to that state.&lt;/li&gt;
+&lt;li&gt;For win-loss games, we record at each state the number wins and losses associated when that node has appeared in the game. Wins count +1 and losses as -1.&lt;/li&gt;
+&lt;li&gt;In practice, we can&amp;rsquo;t store a table with each and every observed state; so MCTS also contains rules that determine how to grow a tree from a root state using these principles. The idea is to estimate at each state, its best possible future total reward.&lt;/li&gt;
+&lt;li&gt;Several possibilities are available: for example, using early stopping for an already seen state, and used its current estimate for backpropagation. Another common strategy is to run several simultaneous monte carlo experiments starting from the fixed current state using the current tree policy, and then update the tree with the results.&lt;/li&gt;
+&lt;li&gt;The MCTS rules fall in 4 types in order of execution: selection, expansion, simulation, backpropagation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;interesting-links&#34;&gt;Interesting links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://spinningup.openai.com:&#34; target=&#34;_blank&#34;&gt;https://spinningup.openai.com:&lt;/a&gt; OpenAI project with pedagogical deep reinforcement learning material, including an updated list of key papers an ideas, as well code exercises to get started.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/mauriciogtec/blog/raw/master/resources/rl-reading-list/rl-reading-list.bib&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Download as bibtex&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- To generate this section use pandoc on resources folder: pandoc --filter=pandoc-citeproc --standalone rl-reading-list.md -o rl-reading-list.html --&gt;
+
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Bellman:1957&#34;&gt;
+&lt;p&gt;Bellman, Richard. 1957. &lt;em&gt;Dynamic Programming&lt;/em&gt;. 1st ed. Princeton, NJ, USA: Princeton University Press.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-NIPS2014_5378&#34;&gt;
+&lt;p&gt;Besbes, Omar, Yonatan Gur, and Assaf Zeevi. 2014. “Stochastic Multi-Armed-Bandit Problem with Non-Stationary Rewards.” In &lt;em&gt;Advances in Neural Information Processing Systems 27&lt;/em&gt;, edited by Z. Ghahramani, M. Welling, C. Cortes, N. D. Lawrence, and K. Q. Weinberger, 199–207. Curran Associates, Inc. &lt;a href=&#34;http://papers.nips.cc/paper/5378-stochastic-multi-armed-bandit-problem-with-non-stationary-rewards.pdf&#34; class=&#34;uri&#34;&gt;http://papers.nips.cc/paper/5378-stochastic-multi-armed-bandit-problem-with-non-stationary-rewards.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Browne2012&#34;&gt;
+&lt;p&gt;Browne, Cb, and Edward Powley. 2012. “A survey of monte carlo tree search methods.” &lt;em&gt;Intelligence and AI&lt;/em&gt; 4 (1): 1–49. doi:&lt;a href=&#34;https://doi.org/10.1109/TCIAIG.2012.2186810&#34;&gt;10.1109/TCIAIG.2012.2186810&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-DBLP:journals/ftml/BubeckC12&#34;&gt;
+&lt;p&gt;Bubeck, Sébastien, and Nicolò Cesa-Bianchi. 2012. “Regret Analysis of Stochastic and Nonstochastic Multi-Armed Bandit Problems.” &lt;em&gt;Foundations and Trends in Machine Learning&lt;/em&gt; 5 (1): 1–122. doi:&lt;a href=&#34;https://doi.org/10.1561/2200000024&#34;&gt;10.1561/2200000024&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-NIPS2011_4321&#34;&gt;
+&lt;p&gt;Chapelle, Olivier, and Lihong Li. 2011. “An Empirical Evaluation of Thompson Sampling.” In &lt;em&gt;Advances in Neural Information Processing Systems 24&lt;/em&gt;, edited by J. Shawe-Taylor, R. S. Zemel, P. L. Bartlett, F. Pereira, and K. Q. Weinberger, 2249–57. Curran Associates, Inc. &lt;a href=&#34;http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf&#34; class=&#34;uri&#34;&gt;http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-DBLP:conf/nips/CombesMP17&#34;&gt;
+&lt;p&gt;Combes, Richard, Stefan Magureanu, and Alexandre Proutière. 2017. “Minimal Exploration in Structured Stochastic Bandits.” In &lt;em&gt;Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, 4-9 December 2017, Long Beach, ca, USA&lt;/em&gt;, 1761–9. &lt;a href=&#34;http://papers.nips.cc/paper/6773-minimal-exploration-in-structured-stochastic-bandits&#34; class=&#34;uri&#34;&gt;http://papers.nips.cc/paper/6773-minimal-exploration-in-structured-stochastic-bandits&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-DBLP:conf/aaai/DabneyRBM18&#34;&gt;
+&lt;p&gt;Dabney, Will, Mark Rowland, Marc G. Bellemare, and Rémi Munos. 2018. “Distributional Reinforcement Learning with Quantile Regression.” In &lt;em&gt;Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence, (Aaai-18), the 30th Innovative Applications of Artificial Intelligence (Iaai-18), and the 8th AAAI Symposium on Educational Advances in Artificial Intelligence (Eaai-18), New Orleans, Louisiana, Usa, February 2-7, 2018&lt;/em&gt;, 2892–2901. &lt;a href=&#34;https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17184&#34; class=&#34;uri&#34;&gt;https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17184&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-LAI19854&#34;&gt;
+&lt;p&gt;Lai, T.L, and Herbert Robbins. 1985. “Asymptotically Efficient Adaptive Allocation Rules.” &lt;em&gt;Advances in Applied Mathematics&lt;/em&gt; 6 (1): 4–22. doi:&lt;a href=&#34;https://doi.org/https://doi.org/10.1016/0196-8858(85)90002-8&#34;&gt;https://doi.org/10.1016/0196-8858(85)90002-8&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-journals/corr/LillicrapHPHETS15&#34;&gt;
+&lt;p&gt;Lillicrap, Timothy P., Jonathan J. Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, and Daan Wierstra. 2015. “Continuous Control with Deep Reinforcement Learning.” &lt;em&gt;CoRR&lt;/em&gt; abs/1509.02971. &lt;a href=&#34;http://dblp.uni-trier.de/db/journals/corr/corr1509.html#LillicrapHPHETS15&#34; class=&#34;uri&#34;&gt;http://dblp.uni-trier.de/db/journals/corr/corr1509.html#LillicrapHPHETS15&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-pmlr-v48-mniha16&#34;&gt;
+&lt;p&gt;Mnih, Volodymyr, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy Lillicrap, Tim Harley, David Silver, and Koray Kavukcuoglu. 2016. “Asynchronous Methods for Deep Reinforcement Learning.” In &lt;em&gt;Proceedings of the 33rd International Conference on Machine Learning&lt;/em&gt;, edited by Maria Florina Balcan and Kilian Q. Weinberger, 48:1928–37. Proceedings of Machine Learning Research. New York, New York, USA: PMLR. &lt;a href=&#34;http://proceedings.mlr.press/v48/mniha16.html&#34; class=&#34;uri&#34;&gt;http://proceedings.mlr.press/v48/mniha16.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-DBLP:journals/corr/MnihKSGAWR13&#34;&gt;
+&lt;p&gt;Mnih, Volodymyr, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, and Martin A. Riedmiller. 2013. “Playing Atari with Deep Reinforcement Learning.” &lt;em&gt;CoRR&lt;/em&gt; abs/1312.5602. &lt;a href=&#34;http://arxiv.org/abs/1312.5602&#34; class=&#34;uri&#34;&gt;http://arxiv.org/abs/1312.5602&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-46647&#34;&gt;
+&lt;p&gt;Riquelme, Carlos, George Tucker, and Jasper Roland Snoek. 2018. “Deep Bayesian Bandits Showdown.” In. &lt;a href=&#34;https://openreview.net/pdf?id=SyYe6k-CW&#34; class=&#34;uri&#34;&gt;https://openreview.net/pdf?id=SyYe6k-CW&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-DBLP:journals/pieee/ShahriariSWAF16&#34;&gt;
+&lt;p&gt;Shahriari, Bobak, Kevin Swersky, Ziyu Wang, Ryan P. Adams, and Nando de Freitas. 2016. “Taking the Human Out of the Loop: A Review of Bayesian Optimization.” &lt;em&gt;Proceedings of the IEEE&lt;/em&gt; 104 (1): 148–75. doi:&lt;a href=&#34;https://doi.org/10.1109/JPROC.2015.2494218&#34;&gt;10.1109/JPROC.2015.2494218&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-DBLP:journals/corr/abs-1712-01815&#34;&gt;
+&lt;p&gt;Silver, David, Thomas Hubert, Julian Schrittwieser, Ioannis Antonoglou, Matthew Lai, Arthur Guez, Marc Lanctot, et al. 2017. “Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm.” &lt;em&gt;CoRR&lt;/em&gt; abs/1712.01815. &lt;a href=&#34;http://arxiv.org/abs/1712.01815&#34; class=&#34;uri&#34;&gt;http://arxiv.org/abs/1712.01815&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Sutton1998&#34;&gt;
+&lt;p&gt;Sutton, Richard S., and Andrew G. Barto. 2018. &lt;em&gt;Reinforcement Learning: An Introduction&lt;/em&gt;. Second. The MIT Press. &lt;a href=&#34;http://incompleteideas.net/book/the-book-2nd.html&#34; class=&#34;uri&#34;&gt;http://incompleteideas.net/book/the-book-2nd.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Tesauro:1995:TDL:203330.203343&#34;&gt;
+&lt;p&gt;Tesauro, Gerald. 1995. “Temporal Difference Learning and Td-Gammon.” &lt;em&gt;Commun. ACM&lt;/em&gt; 38 (3). New York, NY, USA: ACM: 58–68. doi:&lt;a href=&#34;https://doi.org/10.1145/203330.203343&#34;&gt;10.1145/203330.203343&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-10.2307/2332286&#34;&gt;
+&lt;p&gt;Thompson, William R. 1933. “On the Likelihood That One Unknown Probability Exceeds Another in View of the Evidence of Two Samples.” &lt;em&gt;Biometrika&lt;/em&gt; 25 (3/4). [Oxford University Press, Biometrika Trust]: 285–94. &lt;a href=&#34;http://www.jstor.org/stable/2332286&#34; class=&#34;uri&#34;&gt;http://www.jstor.org/stable/2332286&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Watkins:1989&#34;&gt;
+&lt;p&gt;Watkins, Christopher John Cornish Hellaby. 1989. “Learning from Delayed Rewards.” PhD thesis, Cambridge, UK: King’s College. &lt;a href=&#34;http://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf&#34; class=&#34;uri&#34;&gt;http://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Wu:2018:LCB:3209978.3210051&#34;&gt;
+&lt;p&gt;Wu, Qingyun, Naveen Iyer, and Hongning Wang. 2018. “Learning Contextual Bandits in a Non-Stationary Environment.” In &lt;em&gt;The 41st International Acm Sigir Conference on Research &amp;amp;#38; Development in Information Retrieval&lt;/em&gt;, 495–504. SIGIR ’18. New York, NY, USA: ACM. doi:&lt;a href=&#34;https://doi.org/10.1145/3209978.3210051&#34;&gt;10.1145/3209978.3210051&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;reading-list&#34;&gt;Reading list&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;1_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;13_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;14_&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Distributed Computing: Julia vs MPI (Julia is super easy)</title>
+      <link>https://mauriciogtec.github.io/post/mpi-vs-julia/</link>
+      <pubDate>Fri, 16 Nov 2018 17:23:07 -0600</pubDate>
+      
+      <guid>https://mauriciogtec.github.io/post/mpi-vs-julia/</guid>
+      <description>
+
+&lt;p&gt;In this tiny post, I show with a minimal example the main difference between the distributed computing approaches of Julia and MPI. For this we will use Stampede 2, the University of Texas&amp;rsquo; supercomputer (the faster at any university as of now). This is an Intel Skylake cluster that uses SLURM as it&amp;rsquo;s job queue system. We will show step-by-step how to run a distributed hello-world program in both languages.&lt;/p&gt;
+
+&lt;p&gt;In this post, I don&amp;rsquo;t want to suggest that a specific approach is better. The benefits of MPI are well-known; what I do want to do, however, is to demonstrate how easy it is to set-up Julia&amp;ndash;which is less known. The objective of the creators of Julia was to create a high-level language that can perform with similar performance to compiled C code, but with a high-level feel to it. Personally, I&amp;rsquo;ve found this extremely useful for my research.&lt;/p&gt;
+
+&lt;p&gt;Julia is not frustration free. While Julia 1.0 is a major step, bringing several performance stability improvements and language coherence; there is still a long way to go, especially since libraries aren&amp;rsquo;t as mature as in Python or R, or other languages that I commonly need for my research. That being said, there is a great feeling to it, and the more I use the more I like it. Library loading times still bug me, but if you are use to compile C code all the time, it&amp;rsquo;s a reasonable price to pay for easier debugging and faster development.&lt;/p&gt;
+
+&lt;p&gt;This post is neither a tutorial on distributed computing, Julia or C. I will only focus on the minimal requirements of running a distributed job on a SLURM cluster. This post is an attempt to explain these differences to myself, so if you find any of my statements inaccurate, you are probably right&amp;ndash;please let me know if this is the case.&lt;/p&gt;
+
+&lt;h2 id=&#34;key-concepts&#34;&gt;Key concepts&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Node&lt;/strong&gt;: A computer. It can be make of several cores. For example, the supercomputer Stampede2 has Skylake nodes, which are made of 48 cores each.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Processes&lt;/strong&gt;: Each node can run multiple processes: i.e., instances doing computations. Typically, when multiple processes are run in one node, they are assigned to different processors. Processors handle multiple processes via multi-threading and queues.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cluster&lt;/strong&gt;: Many nodes wired together.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distributed computing&lt;/strong&gt;: It&amp;rsquo;s a form of parallel computing that runs on clusters. Nodes don&amp;rsquo;t share memory: variables of the program only exist locally. Any form of data communication between nodes will have to be programmed explicitly. It is usually harder to implement than multi-threading, which is shared-memory parallelism. The latter is limited, since it is much more expensive to build larger computers than wire them together.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MPI&lt;/strong&gt; (Message Passing Interface): A library for C that is used for distributed computing. It defines communication protocols between nodes at a relatively high level.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hello-world-with-mpi&#34;&gt;Hello world with MPI&lt;/h2&gt;
+
+&lt;p&gt;MPI&amp;rsquo;s basic approach to distributed computing is to take a C program that is executed in parallel by every node such that every node executes &lt;em&gt;EXACTLY&lt;/em&gt; the same program. When nodes should perform different tasks, the code must contain conditional statements with specific tasks in them. MPI gives an API to query which node is running the program.&lt;/p&gt;
+
+&lt;p&gt;The following example is minimally modified from &lt;a href=&#34;http://mpitutorial.com/tutorials/mpi-hello-world/&#34; target=&#34;_blank&#34;&gt;this tutorial&lt;/a&gt;. Please review it for a more detailed explanation of the code. They key part is that we are importing &lt;code&gt;&amp;lt;mpi.h&amp;gt;&lt;/code&gt; from the beginning, which provides the functions to request the process.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include &amp;lt;mpi.h&amp;gt;
+#include &amp;lt;stdio.h&amp;gt;
+
+int main(int argc, char** argv) {
+    // Initialize the MPI environment (every program starts like this)
+    MPI_Init(&amp;amp;argc, &amp;amp;argv);
+
+    // Get the number of processes
+    int world_size;
+    MPI_Comm_size(MPI_COMM_WORLD, &amp;amp;world_size);
+
+    // Get the rank of the process; rank is id
+    int world_rank;
+    MPI_Comm_rank(MPI_COMM_WORLD, &amp;amp;world_rank);
+
+    // Get the name of the processor
+    char processor_name[MPI_MAX_PROCESSOR_NAME];
+    int name_len;
+    MPI_Get_processor_name(processor_name, &amp;amp;name_len);
+
+    // Print off a hello world message
+    printf(&amp;quot;Hello world from processor %s, rank %d out of %d processors\n&amp;quot;,
+    processor_name, world_rank, world_size);
+
+    // Finalize the MPI environment.
+    MPI_Finalize();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;julia&#34;&gt;Julia&lt;/h2&gt;
+
+&lt;h2 id=&#34;summary-comparison&#34;&gt;Summary comparison&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Use YAML!</title>
+      <link>https://mauriciogtec.github.io/post/use-yaml/</link>
+      <pubDate>Tue, 11 Sep 2018 14:14:07 -0500</pubDate>
+      
+      <guid>https://mauriciogtec.github.io/post/use-yaml/</guid>
+      <description>
+
+&lt;p&gt;A common issue when starting a new project involving data is choosing a format in which to store the data.&lt;/p&gt;
+
+&lt;p&gt;The answer to the question of course depends on several aspects: the sources, the data types, the purpose, and its relational structure.&lt;/p&gt;
+
+&lt;p&gt;While modern approaches in Big Data endorse the strategy of first extracting high volumes of raw data and worry about processing later; in here we shall be concerned with the opposite case, when data has to be captured manually by a human team, and we don&amp;rsquo;t want to spend hours later trying to make it amenable for the computer to read.&lt;/p&gt;
+
+&lt;p&gt;You are probably familiar with CSVs, because you can create CSVs in Excel, which makes them quite handy. However, they are mainly useful for highly structured data having a fixed known number of columns per record.&lt;/p&gt;
+
+&lt;p&gt;I want to present a basic introduction to YAML (yet-another-markup-language), a simple approach to keeping data records. It&amp;rsquo;s advantages are&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;it is machine-readable&lt;/li&gt;
+&lt;li&gt;it is human-readable&lt;/li&gt;
+&lt;li&gt;ergo, human-writable too&lt;/li&gt;
+&lt;li&gt;used widely nowadays&lt;/li&gt;
+&lt;li&gt;can be transformed to other common data serialization formats such as JSON&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For my example I will use Python to &amp;lsquo;parse&amp;rsquo; the YAML format. The idea is to show by example how a file stored in this format is readable by the machine.&lt;/p&gt;
+
+&lt;p&gt;Our task is to use YAML to serialize, records of annotated bibliography. Note that there are other forms recording bibliography, such bibtex, but I claim that YAML requires much less effort.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-simple-example&#34;&gt;A simple example&lt;/h2&gt;
+
+&lt;p&gt;Below are the contents of a simple YAML file named &lt;code&gt;example1.yaml&lt;/code&gt;. This is a textfile, pretty much like a file ending with &lt;code&gt;.txt&lt;/code&gt; which you have most likely used before and opened with the Notepad if you are a Windows user. This file can also be opened with the Notepad, but it ends with &lt;code&gt;.yaml&lt;/code&gt; instead of &lt;code&gt;.txt&lt;/code&gt;. Note that the colors are not part of the file, but of the display engine we are using here.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# filename: example1.yaml
+# description: a simple yaml for annotated bibliography
+id: &amp;quot;1,000Days_2018_What_We&#39;re_Watching_in_Congress&amp;quot; 
+added_by: &amp;quot;John Doe&amp;quot;
+title: &amp;quot;Congress is Back in Session: Here&#39;s What We&#39;re Watching&amp;quot;
+author:  &amp;quot;1,000 Days&amp;quot;
+publisher: &amp;quot;https://thousanddays.org/congress-is-back-in-session-heres-what-were-watching/&amp;quot;
+publisher_type: &amp;quot;website&amp;quot; 
+date: 2018-06-05 
+accessed: 2018-09-08
+keywords: 
+  - &amp;quot;Congress&amp;quot;
+  - &amp;quot;Farm Bill&amp;quot;
+  - &amp;quot;Supplemental Nutrition Assistance Program&amp;quot;
+  - &amp;quot;SNAP&amp;quot;
+  - &amp;quot;The Special Supplemental Nutrition Program for Women&amp;quot;
+  - &amp;quot;Infants and Children&amp;quot;
+  - &amp;quot;WIC, 2020-2025 Dietary Guidelines for Americans&amp;quot;
+  - &amp;quot;DGAs, Maternal Mortality&amp;quot;
+  - &amp;quot;Children&#39;s Health Insurance Program&amp;quot;
+  - &amp;quot;CHIP, Medicaid&amp;quot;
+  - &amp;quot;public charge&amp;quot;
+summary: |
+  This webpage produced by the advocacy group 1,000 Days provides a summary of Congressional items that the group is keeping an eye on during the summer of 2018. These items are:
+  1)     Changes to SNAP in the Farm Bill
+  a.    House of Representatives put forth a Farm Bill with significant reduction to SNAP that would reduce food security for low-income families in the US. The Senate has a more balanced bill that is set to be marked up on June 13
+  2)     Funding for WIC
+  a.    WIC is funded through the annual appropriation process. Both House and Senate appropriation bills include less FY19 WIC funding than FY18. Breastfeeding peer counselor funding in both bills remains at $60 million. 
+  3)     New Dietary Guidelines
+  a.    House and Senate support funding of $12.3 million to USDA to develop DGAs. 
+  4)     Maternal Mortality Legislation
+  a.    Both House and Senate have members who are introducing legislation on addressing high rates of maternal mortality in the US. The legislation will also focus on racial and ethnic disparities in maternal mortality rates in the US.
+  5)     Proposed Cuts to CHIP
+  a.    Trump has threatened to rescind $7 billion of funding to CHIP that was signed into law and passed by both the Senate and House. 
+  6)     Threats to Immigrant Families
+  a.    Public Charge, a proposed Dept. of Homeland Security rule that would limit immigrant access to benefits such as WIC and Medicaid is currently pending review.
+
+advocacy_facts: |
+  In 2013, Congress mandated that the United States Department of Agriculture (USDA) and the United States Department of Health and Human Services (HHS) include pregnant women and young children as part of the 2020-2025 Dietary Guidelines for Americans (DGAs). The updated DGAs will inform federal nutrition programs that reach young children and their families, as well as serve as an important reference point for physicians, nutrition counselors, early childcare providers, among others.  – 1,000 Days
+
+additional_sources: 
+  - &#39;https://thousanddays.org/draft-house-farm-bill-will-harm-families-and-children/&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We now show Python code that reads the above file&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import yaml # library for YAML support in python
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with open(&amp;quot;example1.yaml&amp;quot;, &amp;quot;r&amp;quot;) as file:
+    record = yaml.load(file)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(record[&#39;id&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;1,000Days_2018_What_We&#39;re_Watching_in_Congress
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(record[&#39;title&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;Congress is Back in Session: Here&#39;s What We&#39;re Watching
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(record[&#39;keywords&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;[&#39;Congress&#39;, &#39;Farm Bill&#39;, &#39;Supplemental Nutrition Assistance Program&#39;, &#39;SNAP&#39;, &#39;The Special Supplemental Nutrition Program for Women&#39;, &#39;Infants and Children&#39;, &#39;WIC, 2020-2025 Dietary Guidelines for Americans&#39;, &#39;DGAs, Maternal Mortality&#39;, &amp;quot;Children&#39;s Health Insurance Program&amp;quot;, &#39;CHIP, Medicaid&#39;, &#39;public charge&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(record[&#39;summary&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;This webpage produced by the advocacy group 1,000 Days provides a summary of Congressional items that the group is keeping an eye on during the summer of 2018. These items are:
+1)     Changes to SNAP in the Farm Bill
+a.    House of Representatives put forth a Farm Bill with significant reduction to SNAP that would reduce food security for low-income families in the US. The Senate has a more balanced bill that is set to be marked up on June 13
+2)     Funding for WIC
+a.    WIC is funded through the annual appropriation process. Both House and Senate appropriation bills include less FY19 WIC funding than FY18. Breastfeeding peer counselor funding in both bills remains at $60 million. 
+3)     New Dietary Guidelines
+a.    House and Senate support funding of $12.3 million to USDA to develop DGAs. 
+4)     Maternal Mortality Legislation
+a.    Both House and Senate have members who are introducing legislation on addressing high rates of maternal mortality in the US. The legislation will also focus on racial and ethnic disparities in maternal mortality rates in the US.
+5)     Proposed Cuts to CHIP
+a.    Trump has threatened to rescind $7 billion of funding to CHIP that was signed into law and passed by both the Senate and House. 
+6)     Threats to Immigrant Families
+a.    Public Charge, a proposed Dept. of Homeland Security rule that would limit immigrant access to benefits such as WIC and Medicaid is currently pending review.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;record[&#39;date&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;datetime.date(2018, 6, 5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;record[&#39;date&#39;].year
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;2018
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h2&gt;
+
+&lt;p&gt;There are the things that can be input in a YAML:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;key: value&lt;/em&gt;&amp;rdquo; pairs&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;lists&lt;/em&gt;: denoted with brackets &lt;code&gt;[x1, x2, ..., xn]&lt;/code&gt; or with indented dashes as &lt;code&gt;keywords&lt;/code&gt; in the previous example.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;value&lt;/em&gt; can be atomic such as strings, numbers or dates, or it can be a list of these atomic elements, or even a list of &amp;ldquo;key: value&amp;rdquo; pairs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When a computer program such as Python reads YAML it maps each value to the correct type.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Important note about keys&lt;/strong&gt;: A good citizenship practice is too &lt;strong&gt;NEVER&lt;/strong&gt;:
+- start with symbols or numbers
+- include white spaces&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# filename: example2.yml
+# description: example for data types
+# comments are indicated  with pounds and ignored by compiler
+anumber: 2
+anothernumber: 3.1416
+astring: &amp;quot;hello, world!&amp;quot;
+anotherstring: noproblemhere # if there aren&#39;t spaces it works without quotation marks
+adate: 2018-09-11 # yyyy-mm-dd best format!
+alist:
+  - these
+  - is
+  - a
+  - list
+  - with 
+  - name
+anotherlist = [&#39;can&#39;, &#39;use&#39;, &#39;brackets&#39;]
+adict: # watch the indentation!
+  key1: value1
+  key2: value2
+  key3:
+    - value31
+    - value32
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with open(&amp;quot;example2.yaml&amp;quot;, &amp;quot;r&amp;quot;) as file:
+    record2 = yaml.load(file)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;display(record2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;{&#39;anumber&#39;: 2,
+    &#39;anothernumber&#39;: 3.1416,
+    &#39;astring&#39;: &#39;hello, world!&#39;,
+    &#39;anotherstring&#39;: &#39;noproblemhere&#39;,
+    &#39;adate&#39;: datetime.date(2018, 9, 11),
+    &#39;alist&#39;: [&#39;these&#39;, &#39;is&#39;, &#39;a&#39;, &#39;list&#39;, &#39;with&#39;, &#39;name&#39;],
+    &#39;anotherlist&#39;: [&#39;can&#39;, &#39;use&#39;, &#39;brackets&#39;],
+    &#39;adict&#39;: {&#39;key1&#39;: &#39;value1&#39;, &#39;key2&#39;: &#39;value2&#39;, &#39;key3&#39;: [&#39;value31&#39;, &#39;value32&#39;]}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let&amp;rsquo;s the data types that Python assigns to the read objects.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for key, val in record2.items():
+    print(key, &amp;quot;has data type: &amp;quot;, type(val))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;anumber has data type:  &amp;lt;class &#39;int&#39;&amp;gt;
+anothernumber has data type:  &amp;lt;class &#39;float&#39;&amp;gt;
+astring has data type:  &amp;lt;class &#39;str&#39;&amp;gt;
+anotherstring has data type:  &amp;lt;class &#39;str&#39;&amp;gt;
+adate has data type:  &amp;lt;class &#39;datetime.date&#39;&amp;gt;
+alist has data type:  &amp;lt;class &#39;list&#39;&amp;gt;
+anotherlist has data type:  &amp;lt;class &#39;list&#39;&amp;gt;
+adict has data type:  &amp;lt;class &#39;dict&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;multiline-strings&#34;&gt;Multiline strings&lt;/h2&gt;
+
+&lt;p&gt;There are two ways to deal with long texts. Collapsing lines, when the text is really a long line or paragraph&amp;rsquo;, or respecting format. Here is an example.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# filename: example3.yml
+# description: long strings
+include_newlines: |
+  exactly as you see
+  will appear these three
+  lines of poetry
+fold_newlines: &amp;gt;
+  this is really a
+  single line of text
+  despite appearances
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with open(&amp;quot;example3.yaml&amp;quot;, &amp;quot;r&amp;quot;) as file:
+    longstrings = yaml.load(file)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(longstrings[&#39;include_newlines&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;exactly as you see
+will appear these three
+lines of poetry
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(longstrings[&#39;fold_newlines&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;this is really a single line of text despite appearances
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;more-than-one-record-per-file&#34;&gt;More than one record per file&lt;/h3&gt;
+
+&lt;p&gt;For some applications it can be useful to have one big file for different records. That&amp;rsquo;s no problem for YAML. Just separate them with &lt;code&gt;---&lt;/code&gt; lines.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# filename: example4.yml
+# description: a multi-record YAML
+# starts record 1
+key11: value11
+key12: value12
+---
+# starts record 2
+key21: value21
+key22: value22
+# no need to add ---- again
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with open(&amp;quot;example4.yaml&amp;quot;, &amp;quot;r&amp;quot;) as file:
+    multirecords = yaml.load_all(file)
+    for i, record in enumerate(multirecords):
+        print(&amp;quot;This is record&amp;quot;, i + 1)
+        display(record)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;This is record 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;{&#39;key11&#39;: &#39;value11&#39;, &#39;key12&#39;: &#39;value12&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;This is record 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;{&#39;key21&#39;: &#39;value21&#39;, &#39;key22&#39;: &#39;value22&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;what-can-we-do-with-yaml&#34;&gt;What can we do with YAML?&lt;/h2&gt;
+
+&lt;p&gt;This is a broad question, since there&amp;rsquo;s a million things you can do with a database. However here&amp;rsquo;s a quick example using Python.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# filename: example5.yml
+# description: a multi-record YAML for topic queries
+id: 1
+topics: [&#39;sports&#39;, &#39;war&#39;]
+---
+id: 2
+topics: [&#39;sports&#39;, &#39;war&#39;]
+---
+id: 3 
+topics: [&#39;food&#39;, &#39;war&#39;]
+---
+id: 4 
+topics: [&#39;sports&#39;, &#39;beauty&#39;, &#39;art&#39;]
+---
+id: 5 
+topics: [&#39;art&#39;, &#39;war&#39;]
+---
+id: 6
+topics: [&#39;literature&#39;]
+---
+id: 7 
+topics: [&#39;sports&#39;, &#39;art&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with open(&amp;quot;example5.yaml&amp;quot;, &amp;quot;r&amp;quot;) as file:
+    records = list(yaml.load_all(file))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Suppose that we want to know what id&amp;rsquo;s are associated with the topic &lt;code&gt;sports&lt;/code&gt;. Then we can use Python to do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[rec[&#39;id&#39;] for rec in records if &#39;sports&#39; in rec[&#39;topics&#39;]] # find record id&#39;s that have topic sports
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;[1, 2, 4, 7]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;learn-more&#34;&gt;Learn more&lt;/h2&gt;
+
+&lt;p&gt;There isn&amp;rsquo;t much science to YAML. Most of the time what we learned is enough. But to learn more you can check the official documentation and this &lt;a href=&#34;http://yaml.org/refcard.html&#34; target=&#34;_blank&#34;&gt;reference card&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;practice&#34;&gt;Practice&lt;/h2&gt;
+
+&lt;p&gt;A great option for checking quickly if your YAML syntax is correct, is to use an online parser like this one: &lt;a href=&#34;http://yaml-online-parser.appspot.com/&#34; target=&#34;_blank&#34;&gt;yaml-online-parser.appspot.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Julia Package: Adaptive Rejection Sampling</title>
+      <link>https://mauriciogtec.github.io/project/adaptive-rejection-sampling/</link>
+      <pubDate>Wed, 08 Aug 2018 13:23:42 -0500</pubDate>
+      
+      <guid>https://mauriciogtec.github.io/project/adaptive-rejection-sampling/</guid>
+      <description>&lt;p&gt;AdaptiveRejectionSampling&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R package: Non-parametric Density Estimation with Particle Learning</title>
+      <link>https://mauriciogtec.github.io/project/pldensity/</link>
+      <pubDate>Wed, 08 Aug 2018 13:23:42 -0500</pubDate>
+      
+      <guid>https://mauriciogtec.github.io/project/pldensity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Beginning</title>
+      <link>https://mauriciogtec.github.io/post/the-beginning/</link>
+      <pubDate>Tue, 07 Aug 2018 21:19:50 -0500</pubDate>
+      
+      <guid>https://mauriciogtec.github.io/post/the-beginning/</guid>
+      <description>
+
+&lt;p&gt;I sincerely hope that this &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; website is&amp;ndash;finally&amp;ndash;the beginning of the blog I&amp;rsquo;ve been searching for a long time. Every year or so &amp;lsquo;I feel it&amp;rsquo;s time&amp;rsquo;, but I&amp;rsquo;m am always detained by the boredom of the existing technology: neither I want to use log-in solutions such as &lt;em&gt;Wordpress&lt;/em&gt;, nor I want to spend years writing html code, just to communicate a simple thought.&lt;/p&gt;
+
+&lt;h4 id=&#34;knots-and-the-name-of-this-blog&#34;&gt;Knots and the name of this blog&amp;hellip;&lt;/h4&gt;
+
+&lt;p&gt;Before becoming a PhD student, I spent a some time thinking about geometry and &lt;a href=&#34;https://en.wikipedia.org/wiki/Knot_theory&#34; target=&#34;_blank&#34;&gt;knots&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Knots are closed curves embedded in the 3-dimensional sphere $
+\mathbb{S}^3$, which is topologically equivalent to the usual 3-dimensional space $\mathbb{R}^3$, but where there is an unseen point $\{*\}$ where all ends meet. That is, no matter what direction you take, in the infinity you&amp;rsquo;ll arrive to the same place.&lt;/p&gt;
+
+&lt;p&gt;Every knot can be visually represented with a &lt;a href=&#34;https://en.wikipedia.org/wiki/Knot_theory#Knot_diagrams&#34; target=&#34;_blank&#34;&gt;knot diagram&lt;/a&gt;. Below are three diagrams of my favourite knot: &lt;em&gt;the unknot&lt;/em&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&#34;https://mauriciogtec.github.io/img/the-beginning/unknot.png&#34; alt=&#34;unknot image&#34; width=&#34;300&#34;&gt; 
+ &lt;figcaption&gt;&lt;center&gt;3 knot diagrams of the unknot.&lt;br/&gt;A knot diagram is 2d-projection of a knot.&lt;/center&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Although its formal mathematical definition it&amp;rsquo;s not as simple as one would imagine, intuitively, the unknot is a lasso or circle, which is technically not a knot, but we like to think of it as the simplest knot.&lt;/p&gt;
+
+&lt;p&gt;Surprisingly, recognising the unknot from a diagram is not a simple problem. In fact, it remains a major &lt;a href=&#34;https://en.wikipedia.org/wiki/Unknotting_problem&#34; target=&#34;_blank&#34;&gt;unresolved issue&lt;/a&gt; to determine if the problem admits a polynomial time solution! What I find fascinating about the unknot is that it shows yet again that simplicity is not easy to find.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-unknot-and-science&#34;&gt;The Unknot and Science&lt;/h4&gt;
+
+&lt;p&gt;In Academia, we tend to present the unknot as a line: although we could choose to do our Science in a more honest fashion&amp;ndash;as the circle diagram&amp;ndash;we like to be a little clever. So we draw our unknots as straight lines, and demand from the audience to visualise the point at infinity, so that we look somewhat smarter.&lt;/p&gt;
+
+&lt;p&gt;Real-world, on the other hand, is pretty tangled, and while the underlying truth is simple, finding it is not a polynomial time task. As practitioners, we spent years untangling diagrams, so that we arrive at the unknot in its circle form.&lt;/p&gt;
+
+&lt;p&gt;In this blog I will try to present the unknot as a circle, simple and beautiful as it is.&lt;/p&gt;
+
+&lt;p&gt;Anyways, I have a good feeling about this blog&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

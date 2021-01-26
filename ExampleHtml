@@ -1,0 +1,2952 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.4.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Shirui Pan">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Assistant Professor">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://shiruipan.github.io/">
+
+  
+
+
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.89c159036fd5fc85df286f54aed8999a.css">
+
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Shirui Pan">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://shiruipan.github.io/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Shirui Pan">
+  <meta property="og:url" content="https://shiruipan.github.io/">
+  <meta property="og:title" content="Shirui Pan">
+  <meta property="og:description" content="Assistant Professor"><meta property="og:image" content="https://shiruipan.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://shiruipan.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2021-01-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Shirui Pan</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Shirui Pan</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured" data-target="#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#service" data-target="#service"><span>Services</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#codes" data-target="#codes"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks" data-target="#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#people" data-target="#people"><span>Team</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching" data-target="#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  
+
+
+
+
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="about" class="home-section wg-about   "  >
+    <div class="container">
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      
+      <img class="portrait" src="/authors/admin/avatar_hu85d38fc0f5ccf75a7cf297e042aebde1_1067481_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+      
+
+      <div class="portrait-title">
+        <h2 itemprop="name">Shirui Pan</h2>
+        <h3 itemprop="jobTitle">Assistant Professor</h3>
+
+        
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <a href="https://www.monash.edu/it/our-research/strengths/data-science/machine-learning" target="_blank" itemprop="url" rel="noopener">
+          <span itemprop="name">Machine Learning</span>
+          </a>
+        </h3>
+        
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <a href="https://www.monash.edu/research/ai-and-data-science" target="_blank" itemprop="url" rel="noopener">
+          <span itemprop="name">Data Science &amp; AI</span>
+          </a>
+        </h3>
+        
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <a href="https://www.monash.edu/it" target="_blank" itemprop="url" rel="noopener">
+          <span itemprop="name">Faculty of IT</span>
+          </a>
+        </h3>
+        
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <a href="https://www.monash.edu/" target="_blank" itemprop="url" rel="noopener">
+          <span itemprop="name">Monash University</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <link itemprop="url" href="">
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="/#contact" >
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="//research.monash.edu/en/persons/shirui-pan" >
+            <i class="fa fa-university big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="//scholar.google.com.au/citations?user=frWRJN4AAAAJ&amp;hl=enJ" >
+            <i class="ai ai-google-scholar big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="//dblp.uni-trier.de/pers/hd/p/Pan:Shirui" >
+            <i class="ai ai-dblp big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="//www.mendeley.com/profiles/shirui-pan/" >
+            <i class="ai ai-mendeley big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="//orcid.org/0000-0003-0794-527X" >
+            <i class="ai ai-orcid big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8" itemprop="description">
+
+    
+    <h1>Biography</h1>
+
+    <p>Shirui Pan is a Lecturer (a.k.a. Assistant Professor) with the <a href="https://www.monash.edu/it/our-research/strengths/data-science/machine-learning" target="_blank">Machine Learning Group</a>, <a href="https://www.monash.edu/it" target="_blank">Faculty of Information Technology</a>, <a href="https://www.monash.edu/" target="_blank">Monash University</a>. Prior to this, he was a Lecturer with the <a href = "https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence"> Centre for Artificial Intelligence (CAI)</a>, School of Software, <a href="https://www.uts.edu.au/about/faculty-engineering-and-information-technology"> Faculty of Engineering and Information Technology</a>,  <a href = "https://uts.edu.au"> University of Technology Sydney(UTS)</a>. Shirui received his Ph.D degree in computer science from UTS, Australia. His research interests include data mining and machine learning, specialized in graph mining and network analysis.</p>
+
+<p><span style="color:red"><b> I am looking for self-motivated Ph.D students. Applicants in Australia are especially welcome.  See more information <a href="../../post/phd_position">here</a>. </b> </span></p>
+
+<p>For Monash students, I can only supervise 1-2 honours/minor thesis students each year. Please see the information about my <a href="../../post/phd_position">reserach group in this post</a> before you apply.</p>
+
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <h3>Interests</h3>
+        <ul class="ul-interests">
+          
+          <li>Artificial Intelligence</li>
+          
+          <li>Data Mining</li>
+          
+          <li>Machine Learning</li>
+          
+          <li>Deep Learning</li>
+          
+          <li>NLP</li>
+          
+          <li>Graph and Network Analysis</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <h3>Education</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">PhD in Computer Science, 2015</p>
+              <p class="institution">University of Technology Sydney</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="whatsnew" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>What&rsquo;s New</h1>
+      
+    </div>
+    <div class="col-12 col-lg-8">
+      <ul>
+<li><span style="color:red"> <b>[Paper]: </b> </span> A <span style="color:red"> <b>Survey on Community Detection </b></span>was released (<a href="https://arxiv.org/pdf/2101.01669.pdf" target="_blank">Click Here</a> )(06/01/2021).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One paper on <a href="../../publication/aaai-2021-wan/">Contrastive Graph Learning</a> was accepted by AAAI-21  (02/12/2020).</li>
+<li><span style="color:orange"> [Award]: </span> The Best Student Paper Award at <a href="http://icdm2020.bigke.org/" target="_blank">ICDM-2020</a>  for <a href="../../publication/icdm-20-wu/">Open-World Graph Learning</a> (13/11/20).</li>
+<li><span style="color:blue"> <b>[CFP]:</b></span> Special Issue on <a href="https://cis.ieee.org/images/files/Documents/call-for-papers/tnnls/CFP_SS_DNNGTMAA.pdf" target="_blank">Graph Neural Networks</a> in <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank">IEEE TNNLS</a>  (<span style="color:red"><b>Top Journal, CORE A*, IF: 8.793</b></span>).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One paper on <a href="../../publication/tmc-20-wang/">Task Graph Oriented Mobile Crowdsourcing</a>  was accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7755" target="_blank">IEEE Trans. Mobile Computing</a> as a Regular Paper (CORE A*, IF:5.112)(13/11/2020)</li>
+<li><span style="color:blue"> <b>[Summary]: </b> </span> How popular is GNN? Check out a summary of NeurIPS-20 papers on Graph Machine Learning <a href="../../post/NIPS_2020_GML.pdf">[Link]</a>.</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One paper on <a href="../../publication/tpami-20-zhang/">Neural Architecture Search</a> was accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank">IEEE TPAMI</a> as a Regular Paper (CORE A*, IF: 17.86)(27/10/2020)<span style="color:red"> (Top Journal in AI)  </span></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> Three papers were accepted by <a href="https://neurips.cc/" target="_blank">NeurIPS-2020</a> as full papers (CORE A*, Acceptance Rate: 20%)(26/09/2020)<span style="color:red"> (Top Conference in Machine Learning)  </span>
+
+<ol>
+<li><a href="../../publication/neurips-20-zhu/">Graph Geometry Interaction Learning</a></li>
+<li><a href="../../publication/neurips-20-wang/">Graph Stochastic Neural Networks</a></li>
+<li><a href="../../publication/neurips-20-zhang/">Exploration Enhancing Neural Architecture Search (E^2NAS)</a></li>
+</ol></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> Two papers on graph machine learning were accepted by <a href="http://icdm.bigke.org/" target="_blank">ICDM-2020</a> as full papers (CORE A*, Acceptance Rate: 9.8%)(21/08/2020)</li>
+<li><span style="color:orange"> [Award]: </span> The Vannevar Bush Best Paper Honorable Mention at <a href="http://2020.jcdl.org/awards/the_vannevar_bush_best_paper_honorable_mention_fp050.pdf" target="_blank">JCDL-2020</a> (05/08/2020) for <a href="../../publication/jcdl-2020-xu/">graph learning</a></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  Two papers are accepted by <a href="https://www.kdd.org/kdd2020/" target="_blank">KDD-2020</a> (16/05/2020) (Acceptance Rate: 16.9%).
+
+<ol>
+<li><a href="../../publication/kdd-2020-wu/">Connecting the Dots: GNN for Time Series</a></li>
+<li><a href="../../publication/kdd-2020-li/">Zero-shot Event Captioning</a></li>
+</ol></li>
+<li><span style="color:blue"> <b>[CFP]:</b></span> Special Issue on <a href="../../post/si_kg">Knowledge Graphs</a> in Neurocomputing  (<span style="color:red"> <b>IF 4.072</b></span>).</li>
+<li><span style="color:blue"> <b>[CFP]:</b></span> Special Issue on <a href="../../post/si_graphml">Graph Machine Learning</a> in Future-Generation Computing Systems (<span style="color:red"> <b>IF 5.768, CORE A</b></span>).</li>
+<li><span style="color:blue"> <b>[CFP]</b></span> Special Issue on <a href="https://www.hindawi.com/journals/complexity/si/314026/" target="_blank">Graph Mining in Social Networks</a> in Complexity Journal (<span style="color:red"> <b>IF: 2.591</b></span>).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One paper on <a href="../../publication/tgrs-2020-wan/">GNN for Hyperspectral Image Classification</a> is accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36" target="_blank">TGRS</a>(IF:5.63)(26/04/2020)</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  Three papers are accepted by <a href="https://ijcai20.org/" target="_blank">IJCAI-2020</a> (20/04/2020) (Acceptance Rate: 12.6%).
+
+<ol>
+<li><a href="../../publication/ijcai-2020-zhang/">Neural Architecture Search</a></li>
+<li><a href="../../publication/ijcai-2020-wan/">Knowledge Graph Reasoning</a></li>
+<li><a href="../../publication/ijcai-2020-yuan/">Relation Extraction for Knowledge Graph</a></li>
+</ol></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One paper on <a href="../../publication/cvpr-2020-zhang/">Neural Architecture Search</a> is accepted by <a href="http://cvpr2020.thecvf.com/" target="_blank">CVPR-2020</a> (24/02/2020).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> A <span style="color:red"> <b>Survey on Knowledge Graphs (KGs) </b></span>  is released (<a href="http://arxiv.org/abs/2002.00388" target="_blank">Click Here</a>). A nice introduction in Chinese can be found <a href="https://mp.weixin.qq.com/s/L6fMcRa1_me2DKr2KADAjA" target="_blank">here</a> (02/02/2020)!</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One paper  on <a href="../../publication/www-2020-wu/">Domain Adaptive GCN</a> is accepted by <a href="https://www2020.thewebconf.org/" target="_blank">WWW-2020</a> (11/01/2020).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One paper on <a href="../../publication/pr-2019-zheng/">Clustering Business Information Networks</a> is accepted by <a href="https://www.journals.elsevier.com/pattern-recognition" target="_blank">Pattern Recognition</a> (21/11/2019)</li>
+<li>Three papers are accepted by <a href="https://aaai.org/Conferences/AAAI-20/" target="_blank">AAAI-2020</a> (11/11/2019).
+
+<ol>
+<li><a href="../../publication/aaai-2020-wan/">Reinforcement Learning for Knowledge Graph</a></li>
+<li><a href="../../publication/aaai-2020-zhu/">Graph Smoothing Splines Neural Networks</a>
+
+<ul>
+<li>State-of-the-art GNN for graph classification [<a href="https://github.com/CheriseZhu/GSSNN" target="_blank">Code</a>]</li>
+</ul></li>
+<li><a href="../../publication/aaai-2020-hu/">Graph Ladder-Shape Networks</a></li>
+</ol></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> A <span style="color:red"> <b> Survey on Suicidal Ideation Detection</b></span>  is released (<a href="https://arxiv.org/abs/1910.12611" target="_blank">Click Here</a>)! (23/10/2019).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One paper on <a href="../../publication/zhang-2019-tifs/">Network Embedding for Android Malware</a> is accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206" target="_blank">IEEE TIFS</a> (IF: 6.211) (12/10/2019).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span> One Paper on <a href="../../publication/tcyb-2019-xiong/">Recommender System</a> is Accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036" target="_blank">IEEE Trans. on Cybernetics </a> (IF: 10.387) (27/08/2019).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  Two papers are accepted by <a href="http://icdm2019.bigke.org/" target="_blank">IEEE ICDM-2019</a> (10/08/2019)
+
+<ol>
+<li><a href="../../publication/icdm-19-wu/">Domain-Adversarial Graph Neural Networks for Text Classification</a>.</li>
+<li><a href="../../publication/icdm-19-zhu/">Relation Structure-Aware Heterogeneous Graph Neural Network</a> [<a href="https://github.com/CheriseZhu/RSHN" target="_blank">Code</a>].</li>
+</ol></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  Two papers are accepted by <a href="http://www.cikm2019.net/" target="_blank">ACM CIKM-2019</a> (09/08/2019).
+
+<ol>
+<li><a href="../../publication/cikm-19-wu/">Long-short Distance Aggregation Networks for Positive Unlabeled Graph Learning</a>.</li>
+<li><a href="../../publication/cikm-19-lin/">An Accurate and Explainable Deep Learning Algorithm for Affect Recognition</a>.</li>
+</ol></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  One Paper on <a href="../../publication/tcyb-2019-pan/">Graph Embedding</a> is Accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036" target="_blank">IEEE Trans. on Cybernetics</a> (IF: 10.387) (23/07/2019).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  One Paper on <a href="../../publication/wwwj-2019-wan/">Knowledge Graph Embedding</a> is Accepted by WWWJ (22/07/2019).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>   Three papers on <i> GNN </i> or <i> Network Embedding </i> are accepted by <b> IJCAI-2019</b>.(10/05/2019).
+
+<ul>
+<li><a href="../../publication/ijcai-2019-wu/">Graph WaveNet</a>, <a href="../../publication/ijcai-2019-wang/">Attributed Graph Clustering</a>, <a href="../../publication/ijcai-2019-yang/">Low-Bit Network Embedding</a></li>
+</ul></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>   A <span style="color:red"> <b> Survey on Graph Neural Networks (GNNs) </b></span>  is released (<a href="https://arxiv.org/abs/1901.00596" target="_blank">Click Here</a>)! A nice introduction blog for GNNs is available <a href="https://blog.acolyer.org/2019/02/06/a-comprehensive-survey-on-graph-neural-networks/" target="_blank">here</a>.</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  One Paper on <a href="../../publication/tcyb-2019-wang/">Influence Analysis on Geo-Social Networks</a> is Accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036" target="_blank">IEEE Trans. on Cybernetics</a> (IF: 8.803) (13/03/2019).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  One Paper on <a href="../../publication/wang-time-2019/">Time Series Feature Learning</a> is Accepted by Pattern Recognition (18/12/2018).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  One Paper on <a href="../../publication/aaai-19-shi/">Label Embedding</a> is Accepted by AAAI-19 (01/11/2018).</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  One Paper on <a href="../../publication/jiang-cost-sensitive-2019/">AI for Insurance Intelligence</a> is Accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=41" target="_blank">IEEE Trans. on Industrial Electronics</a> (IF: 7.05) (09/09/2018)</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  One Paper on  <a href="../../publication/xiong-social-2019/">Social Recommendation</a>  is Accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021" target="_blank">TSMC</a> (IF: 5.131) (29/06/2018)</li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  Three Papers on <b> <a href="../../project/effective-network-embedding/">Network Embedding</a> </b> are Accepted by <b>IJCAI-2018</b> (16/04/2018)
+
+<ul>
+<li><a href="../../publication/pan-adversarially-2018/">Adversarial Network Embedding</a>, <a href="../../publication/shen-discrete-2018/">Discrete Network Embedding</a>, <a href="../../publication/gao-active-2018/">Active Network Embedding</a></li>
+</ul></li>
+<li><span style="color:red"> <b>[Paper]: </b> </span>  Four Papers are accepted in <b> IEEE Trans. </b>(03/10/2017).
+
+<ol>
+<li><a href="../../publication/guo-cfond-2019/">CFOND: Consensus Factorization for Co-Clustering Networked Data</a>. IEEE Trans. Knowl. Data Eng.</li>
+<li><a href="../../publication/wu-multiple-2018/">Multiple Structure-View Learning for Graph Classification</a>.  IEEE Transactions on Neural Networks and Learning Systems.</li>
+<li><a href="../../publication/chi-hashing-2018/">Hashing for Adaptive Real-Time Graph Stream Classification With Concept Drifts</a>. IEEE T. Cybernetics.</li>
+<li><a href="../../publication/wu-multi-instance-2018/">Multi-instance learning with discriminative bag mapping</a>.  IEEE T. Knowl. Data Eng.</li>
+</ol></li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="featured" class="home-section wg-featured   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Featured Publications</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+        
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="card-simple" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+  
+    
+
+
+
+<meta content="2020-09-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-09-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shichao-zhu/">Shichao Zhu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chuan-zhou/">Chuan Zhou</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jia-wu/">Jia Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yanan-cao/">Yanan Cao</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/bin-wang/">Bin Wang</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>September 2020</time>
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>Thirty-fourth Conference on Neural Information Processing Systems, NeurIPS-20</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3" itemprop="name">
+    <a href="/publication/neurips-20-zhu/" itemprop="url">Graph Geometry Interaction Learning</a>
+  </h3>
+
+  
+  <div class="article-style" itemprop="articleBody">
+    <p>While numerous approaches have been developed to embed graphs into either Euclidean or hyperbolic spaces, they do not fully utilize the information available in graphs, or lack the flexibility to model intrinsic complex graph geometry. To utilize the strength of both Euclidean and hyperbolic geometries, we develop a novel Geometry Interaction Learning (GIL) method for graphs, a well-suited and efficient alternative for learning abundant geometric properties in graph. GIL captures a more informative internal structural features with low dimensions while maintaining conformal invariance of each space. Furthermore, our method endows each node the freedom to determine the importance of each geometry space via a flexible dual feature interaction learning and probability assembling mechanism. Promising experimental results are presented for five benchmark datasets on node classification and link prediction tasks.</p>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2010.12135.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="card-simple" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+  
+    
+
+
+
+<meta content="2020-05-15 12:15:49.436331 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-05-15 12:15:49.436331 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zonghan-wu/">Zonghan Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/guodong-long/">Guodong Long</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jing-jiang/">Jing Jiang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xiaojun-chang/">Xiaojun Chang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chengqi-zhang/">Chengqi Zhang</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>May 2020</time>
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="pub-publication">
+    
+      <em>ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD-20</em>
+    
+  </span>
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+  
+
+</div>
+
+  
+
+  
+  
+  
+
+  <h3 class="article-title mb-1 mt-3" itemprop="name">
+    <a href="/publication/kdd-2020-wu/" itemprop="url">Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks</a>
+  </h3>
+
+  
+  <div class="article-style" itemprop="articleBody">
+    <p>Modeling multivariate time series has long been a subject that has attracted researchers from a diverse range of fields including economics, finance, and traffic. A basic assumption behind multivariate time series forecasting is that its variables depend on one another but, upon looking closely, it&rsquo;s fair to say that existing methods fail to fully exploit latent spatial dependencies between pairs of variables. In recent years, meanwhile, graph neural networks (GNNs) have shown high capability in handling relational dependencies. GNNs require well-defined graph structures for information propagation which means they cannot be applied directly for multivariate time series where the dependencies are not known in advance. In this paper, we propose a general graph neural network framework designed specifically for multivariate time series data. Our approach automatically extracts the uni-directed relations among variables through a graph learning module, into which external knowledge like variable attributes can be easily integrated. A novel mix-hop propagation layer and a dilated inception layer are further proposed to capture the spatial and temporal dependencies within the time series. The graph learning, graph convolution, and temporal convolution modules are jointly learned in an end-to-end framework. Experimental results show that our proposed model outperforms the state-of-the-art baseline methods on 3 of 4 benchmark datasets and achieves on-par performance with other approaches on two traffic datasets which provide extra structural information..</p>
+  </div>
+  
+
+  
+  <div class="btn-links">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/kdd-2020-wu/kdd-2020-wu.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="publications" class="home-section wg-pages   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent Publications</h1>
+    <p>IEEE Trans x20; NeurIPS, KDD, WWW, CVPR, ICDE, IJCAI, AAAI, ICDM, SDM, CIKM, PAKDD</p>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    <div class="alert alert-note">
+  <div>
+    <a href="https://shiruipan.github.io/publication/" target="_blank">Full Publications</a>;
+  </div>
+</div>
+
+
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/sheng-wan/">Sheng Wan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jian-yang/">Jian Yang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chen-gong/">Chen Gong</a></span>
+
+  </span>
+  (2021).
+  <a href="/publication/aaai-2021-wan/" itemprop="name">Contrastive and Generative Graph Convolutional Networks for Graph-based Semi-Supervised Learning</a>.
+  <em>AAAI Conference on Artificial Intelligence, AAAI-21</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2009.07111.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/liang-wang/">Liang Wang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhiwen-yu/">Zhiwen Yu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/qi-han/">Qi Han</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/dingqi-yang/">Dingqi Yang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yuan-yao/">Yuan Yao</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/daqing-zhang/">Daqing Zhang</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/tmc-20-wang/" itemprop="name">Compact Scheduling for Task Graph Oriented Mobile Crowdsourcing</a>.
+  *IEEE Transactions on Mobile Computing, TMC (CORE A**).
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/miao-zhang/">Miao Zhang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/huiqi-li/">Huiqi Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xiaojun-chang/">Xiaojun Chang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chuan-zhou/">Chuan Zhou</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zongyuan-ge/">Zongyuan Ge</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/steven-su/">Steven Su</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/tpami-20-zhang/" itemprop="name">One-Shot Neural Architecture Search: Maximising Diversity to Overcome Catastrophic Forgetting</a>.
+  <em>IEEE Transactions on Pattern Analysis and Machine Intelligence, TPAMI</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/tpami-20-zhang/tpami-20-zhang.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/miao-zhang/">Miao Zhang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/huiqi-li/">Huiqi Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xiaojun-chang/">Xiaojun Chang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zongyuan-ge/">Zongyuan Ge</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/steven-su/">Steven Su</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/neurips-20-zhang/" itemprop="name">Differentiable Neural Architecture Search in Equivalent Space with Exploration Enhancement</a>.
+  <em>Thirty-fourth Conference on Neural Information Processing Systems, NeurIPS-20</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/neurips-20-zhang/neurips-20-zhang.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shichao-zhu/">Shichao Zhu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chuan-zhou/">Chuan Zhou</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jia-wu/">Jia Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yanan-cao/">Yanan Cao</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/bin-wang/">Bin Wang</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/neurips-20-zhu/" itemprop="name">Graph Geometry Interaction Learning</a>.
+  <em>Thirty-fourth Conference on Neural Information Processing Systems, NeurIPS-20</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2010.12135.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/haibo-wang/">Haibo Wang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chuan-zhou/">Chuan Zhou</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xin-chen/">Xin Chen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jia-wu/">Jia Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jilong-wang/">Jilong Wang</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/neurips-20-wang/" itemprop="name">Graph Stochastic Neural Networks for Semi-supervised Learning</a>.
+  <em>Thirty-fourth Conference on Neural Information Processing Systems, NeurIPS-20</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/neurips-20-wang/neurips-20-wang.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shaoxiong-ji/">Shaoxiong Ji</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xue-li/">Xue Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/erik-cambria/">Erik Cambria</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/guodong-long/">Guodong Long</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zi-huang/">Zi Huang</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/ji-2020-tccs/" itemprop="name">Suicidal Ideation Detection: A Review of Machine Learning Methods and Applications</a>.
+  <em>IEEE Transactions on Computational Social Systems</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/ji-2020-tccs/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chun-wang/">Chun Wang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/bo-han/">Bo Han</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jing-jiang/">Jing Jiang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/gang-niu/">Gang Niu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/guodong-long/">Guodong Long</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/icdm-20-wang/" itemprop="name">Cross-Graph: Robust and Unsupervised Embedding for Attributed Graphs with Corrupted Structure</a>.
+  <em>Proceedings - 20th IEEE International Conference on Data Mining, ICDM 2020</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/man-wu/">Man Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xingquan-zhu/">Xingquan Zhu</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/icdm-20-wu/" itemprop="name">OpenWGL: Open-World Graph Learning</a>.
+  <em>Proceedings - 20th IEEE International Conference on Data Mining, ICDM 2020</em> (<strong>Best Student Paper Award</strong>).
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/icdm-20-wu/icdm-20-wu.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span itemprop="author" class="article-metadata li-cite-author">
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zonghan-wu/">Zonghan Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shirui-pan/">Shirui Pan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/guodong-long/">Guodong Long</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jing-jiang/">Jing Jiang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xiaojun-chang/">Xiaojun Chang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chengqi-zhang/">Chengqi Zhang</a></span>
+
+  </span>
+  (2020).
+  <a href="/publication/kdd-2020-wu/" itemprop="name">Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks</a>.
+  <em>ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD-20</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/kdd-2020-wu/kdd-2020-wu.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+  
+  
+</div>
+
+      
+    
+
+    
+    <div class="see-all">
+      <a href="/publication/">
+        See all publications
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="service" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Professional Services</h1>
+      
+    </div>
+    <div class="col-12 col-lg-8">
+      
+
+<h4 id="editorship">Editorship</h4>
+
+<ul>
+<li>Associate Editor: IEEE Access (Impact factor: 3.244)</li>
+<li>Guest Editor for Special Issue: Complexity (Impact factor: 4.621)</li>
+</ul>
+
+<h4 id="conference-organisation">Conference Organisation</h4>
+
+<ul>
+<li>Special Session Chair: Learning from Big Graph Data: Theory and Applications, IJCNN-2018 (CORE A)</li>
+<li>Special Session Chair: Advanced Data Analytics for Large-scale Complex Data Environment, IJCNN- 2017 (CORE A)</li>
+<li>Special Session Chair: Advanced Machine Learning Methods and Applications from Complicated Data Environment, IJCNN-2016 (CORE A)</li>
+</ul>
+
+<h4 id="journal-reviewer">Journal Reviewer</h4>
+
+<ul>
+<li>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) (CORE A*)</li>
+<li>IEEE Transactions on Neural Networks and Learning Systems (TNNLS) (CORE A*)</li>
+<li>IEEE Transactions on Knowledge and Data Engineering (TKDE)((CORE A)</li>
+<li>IEEE Transactions on Cybernetics (TCYB) (CORE A)</li>
+<li>IEEE Transactions on Systems, Man and Cybernetics: Systems (SMCA) (CORE B)</li>
+<li>IEEE Signal Processing Letters</li>
+<li>ACM Transactions on Intelligent Systems and Technology (TIST)</li>
+<li>World Wide Web (WWW) (CORE A)</li>
+<li>Social Network Analysis and Mining</li>
+<li>Neural Computing and Applications</li>
+<li>Neurocomputing</li>
+<li>Information Sciences (CORE A)</li>
+</ul>
+
+<h4 id="program-committee">Program Committee</h4>
+
+<ul>
+<li>The International Conference on Learning Representations (ICLR-21)</li>
+<li>Annual Conference on Neural Information Processing Systems (NeurIPS-20,2019) (CORE A*)</li>
+<li>SIGKDD Conference on Knowledge Discovery and Data Mining (KDD-20,19) (CORE A*)</li>
+<li>AAAI Conference on Artificial Intelligence (AAAI-20,19,18,17) (CORE A*)</li>
+<li>The Web Conference (WWW-20,19) (CORE A*)</li>
+<li>International Joint Conference on Artificial Intelligence (IJCAI-20,19,18,17) (CORE A*)</li>
+<li>SIAM International Conference on Data Mining (SDM-19) (CORE A)</li>
+<li>Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD-19,18,17,16)(CORE A)</li>
+<li>IEEE International Conference on Tools with Artificial Intelligence (ICTAI 2014-15)</li>
+<li>International Conference on Advanced Data Mining and Applications (ADMA 2014, 2016)</li>
+<li>The international conference on Advances in Social Network Analysis and Mining (ASONAM 2017)</li>
+<li>The China Computer FedCOREtion (CCF) Conference on Big Data (CCF Big Data 2017)</li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="talks" class="home-section wg-pages   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent &amp; Upcoming Talks</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+
+    <ul>
+<li>Towards Dynamic and Efficient Graph Neural Networks, <a href="http://english.amss.cas.cn/" target="_blank">Chinese Academy of Sciences</a>
+, Beijing, China (Nov 8, 2019)</li>
+<li>Learning from Graph Data: A Graph Neural Network Perspective, <a href="http://english.bit.edu.cn/ensite/cs/index.htm" target="_blank">Beijing Institute of Technology</a>
+, Beijing, China (Nov 7, 2019)</li>
+<li>Towards Dynamic and Efficient Graph Neural Networks, <a href="https://cikm-grla.github.io/" target="_blank">CIKM-2019 Invited Talk</a>, Beijing, China (Nov 7, 2019)</li>
+<li>Learning from Graph Data: A Graph Neural Network Perspective, <a href="https://www.monash.edu/it/our-research/strengths/data-science/machine-learning" target="_blank">Monash University</a>, Melbourne, Australia (Aug 7, 2019)</li>
+</ul>
+
+
+    
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="grants" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Awards and Grants</h1>
+      
+    </div>
+    <div class="col-12 col-lg-8">
+      <ul>
+<li><p>Best Student Paper Award for ICDM-2020 (CORE A* conference)</p></li>
+
+<li><p>The Vannevar Bush Best Paper Honorable Mention for JCDL-2020 (CORE-2018 A* conference)</p></li>
+
+<li><p>Anomaly Detection in Social Networks ($11,000) - 2019-2020</p>
+
+<ul>
+<li>Faculty Early Career Researcher Grant</li>
+<li>Monash University</li>
+</ul></li>
+
+<li><p>Cyberbullying Detection on Social Networks ($20,000) - 2016-2017</p>
+
+<ul>
+<li>UTS Early Career Researcher Grant (UTS - ECRG)</li>
+<li>University of Technology Sydney
+
+<br /></li>
+</ul></li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="codes" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Source Codes</h1>
+      
+    </div>
+    <div class="col-12 col-lg-8">
+      
+
+<h2 id="curated-list">Curated List</h2>
+
+<p>A list of open source code is maintained on <a href="https://github.com/shiruipan/graph-deep-learning" target="_blank">Github</a>.
+More source code will be released as it is ready for publishing.</p>
+
+<h2 id="graph-classification">Graph Classification</h2>
+
+<ul>
+<li>A number of <a href="https://github.com/shiruipan/graph_datasets" target="_blank">graph datasets</a>.</li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="teaching" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Teaching</h1>
+      
+    </div>
+    <div class="col-12 col-lg-8">
+      <ul>
+<li>FIT5196: Data Wrangling, Lecturer, 2019 S1, Monash University
+
+<br /></li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="people" class="home-section wg-people   "  >
+    <div class="container">
+      
+
+
+<div class="row justify-content-center people-widget">
+  
+  <div class="col-md-12 section-heading">
+    <h1>People</h1>
+    
+  </div>
+  
+
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Team Leader</h2>
+  </div>
+
+  
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/admin/"><img class="portrait" src="/authors/admin/avatar_hu85d38fc0f5ccf75a7cf297e042aebde1_1067481_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/admin/">Shirui Pan</a></h2>
+      <h3>Assistant Professor</h3>
+      <p class="people-interests">Artificial Intelligence, Data Mining, Machine Learning, Deep Learning, NLP, Graph and Network Analysis</p>
+    </div>
+  </div>
+
+  
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">PhD Students [Monash]</h2>
+  </div>
+
+  
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/he-zhang/"><img class="portrait" src="/authors/he-zhang/avatar_huda0d38eb919fb1d0cb5359be8a4e7e77_71522_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/he-zhang/">He Zhang</a></h2>
+      <h3>PhD Student (To be Enrolled in 2021)</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/yixin-liu/"><img class="portrait" src="/authors/yixin-liu/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_101461_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/yixin-liu/">Yixin Liu</a></h2>
+      <h3>PhD Student (To be Enrolled in 2021)</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning</p>
+    </div>
+  </div>
+
+  
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">PhD Students [External]</h2>
+  </div>
+
+  
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/shichao-zhu/"><img class="portrait" src="/authors/shichao-zhu/avatar_hu460e7562fe34e11fec42135b336c5284_48488_150x150_fill_q90_lanczos_center.jpeg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/shichao-zhu/">Shichao Zhu</a></h2>
+      <h3>PhD Student (2018-) @ CAS</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/chun-wang/"><img class="portrait" src="/authors/chun-wang/avatar_hu0042f1e5f8b2bbcbbdb3b6473007646c_336733_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/chun-wang/">Chun Wang</a></h2>
+      <h3>PhD Student (2016-) @ UTS</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning, Graph Analysis, Weakly-supervised Learning</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/man-wu/"><img class="portrait" src="/authors/man-wu/avatar_hu1fecbfdec68d71264b8c411dd497dac5_1019231_150x150_fill_q90_lanczos_center.jpeg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/man-wu/">Man Wu</a></h2>
+      <h3>PhD Student (2020-) @ FAU</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/zonghan-wu/"><img class="portrait" src="/authors/zonghan-wu/avatar_hu713a41ccc627e316e2b09e93a98588ed_2874931_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/zonghan-wu/">Zonghan Wu</a></h2>
+      <h3>PhD Student (2018-) @ UTS</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning, Graph Neural Networks, Structure Learning</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/guojia-wan/"><img class="portrait" src="/authors/guojia-wan/avatar_hudb51b4e665df21116cb116e7db87d5ff_22802_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/guojia-wan/">Guojia Wan</a></h2>
+      <h3>PhD Student (2018-) @ Wuhan U.</h3>
+      <p class="people-interests">Artificial Intelligence, Knowledge Graph, Graph Mining</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/fengwen-chen/"><img class="portrait" src="/authors/fengwen-chen/avatar_hu359be330a682efffbc23ed233488e69c_54814_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/fengwen-chen/">Fengwen Chen</a></h2>
+      <h3>PhD Student (2017-) @ UTS</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning, Graph Neural Networks</p>
+    </div>
+  </div>
+
+  
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Visiting Students</h2>
+  </div>
+
+  
+  
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Alumni</h2>
+  </div>
+
+  
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/miao-zhang/"><img class="portrait" src="/authors/miao-zhang/avatar_hu21d2d3c1a3a478beb55bcc2289e56668_4881_150x150_fill_q90_lanczos_center.jpeg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/miao-zhang/">Miao Zhang</a></h2>
+      <h3>Postdoc @ Monash</h3>
+      <p class="people-interests">Artificial Intelligence, AutoML, Bayesian Optimization</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/shaoxiong-ji/"><img class="portrait" src="/authors/shaoxiong-ji/avatar_hu3a360beed7a33c3802559899b486b35d_420076_150x150_fill_q90_lanczos_center.jpeg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/shaoxiong-ji/">Shaoxiong Ji</a></h2>
+      <h3>PhD Student @ Aalto U.</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/ruiqi-hu/"><img class="portrait" src="/authors/ruiqi-hu/avatar_hu9c3cf836328ded33c6cee6b80523c6c8_74172_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/ruiqi-hu/">Ruiqi Hu</a></h2>
+      <h3>Postdoctoral Research Associate @ UTS</h3>
+      <p class="people-interests">Artificial Intelligence, Graph Embedding, Graph Mining</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/hong-yang/"><img class="portrait" src="/authors/hong-yang/avatar_hu17cd15d4450d0914570264d0350a497d_5426_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/hong-yang/">Hong Yang</a></h2>
+      <h3>Postdoc @ USYD</h3>
+      <p class="people-interests">Artificial Intelligence, Machine Learning, Graph Analysis</p>
+    </div>
+  </div>
+
+  
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="contact" class="home-section wg-contact   "  >
+    <div class="container">
+      
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    <ul class="fa-ul" itemscope>
+
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email"><a href="mailto:shirui.pan@monash.edu">shirui.pan@monash.edu</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
+        <span id="person-telephone" itemprop="telephone"><a href="tel:&#43;61%203%209905%209013">&#43;61 3 9905 9013</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address" itemprop="address">Rm 124, 25 Exhibition Walk, Clayton, VIC 3800, Australia</span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
+        <span>Monday-Friday 10:00 to 18:00</span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-calendar-check fa-2x" aria-hidden="true"></i>
+        <a href="https://calendly.com" target="_blank" rel="noopener">Book an appointment</a>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+    
+    <div class="d-none">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="-37.910426">
+      <input id="map-lng" value="145.133815">
+      <input id="map-dir" value="Rm 124, 25 Exhibition Walk, Clayton, VIC 3800, Australia">
+      <input id="map-zoom" value="15">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.16bbb3750feb7244c9bc409a5a4fe678.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
